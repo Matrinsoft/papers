@@ -207,6 +207,7 @@ This package brings the Papers thumbnailer independently from Papers.
 
 
 %build
+export GETTEXT_SYSTEM=1
 %meson \
        -Ddjvu=%{?with_djvu:enabled}%{!?with_djvu:disabled} \
        -Dintrospection=enabled \
